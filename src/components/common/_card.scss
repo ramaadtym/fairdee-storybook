@@ -1,0 +1,125 @@
+@import '../../scss/_variables';
+@import '../../scss/_mixins';
+
+.card {
+  background: $white;
+  box-shadow: 0px 1px 6px rgba(216, 231, 253, 0.5);
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  header {
+    border-bottom: 1px solid $blue-gray-100;
+
+    .title-wrapper {
+      @include flex-items(center);
+      padding: 16px;
+
+      .icon {
+        width: 26px;
+        height: 26px;
+        border-radius: 8px;
+        margin-right: 18px;
+        @include flex-items(center, center);
+
+        &.with-bg {
+          background-color: $blue-20;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &.no-border {
+      border-bottom: 0;
+      @include font(16px, 20px);
+
+      .title-wrapper {
+        padding-bottom: 0;
+      }
+    }
+
+    .title {
+      @include font(16px, 19.2px, null, $black, null, 700);
+    }
+  }
+
+  .accordion {
+    @include flex-items(center, space-between);
+    border-bottom: 0;
+
+    .toggle-accordion {
+      padding-right: 16px;
+      cursor: pointer;
+    }
+    .open-card {
+      transform: rotate(270deg);
+    }
+    .close-card {
+      transform: rotate(90deg);
+    }
+  }
+
+  .accordion-card {
+    border-top: 1px solid $blue-gray-100;
+  }
+
+  .card-body {
+    padding: 12px;
+
+    .price {
+      span {
+        @include font(16px, 24px, null, $black, null, 700);
+      }
+    }
+    .payment-summary-data {
+      background-color: $tertiary-light;
+      padding: 12px;
+
+      .total-premium {
+        border-top: 1px solid $blue-gray-100;
+        margin-top: 16px;
+        padding-top: 4px;
+
+        .key {
+          @include font(16px, 24px, null, $text-gray, null, 500);
+        }
+        .value {
+          @include font(16px, 19px, null, $secondary, right, 700);
+        }
+      }
+    }
+
+    .insurer {
+      .insurer-wrapper {
+        &.flex-start {
+          @include flex-items(null, flex-start);
+        }
+
+        @include flex-items(null, center);
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .value-wrap {
+    @include flex-items(flex-start);
+    margin-bottom: 4px;
+
+    p {
+      @include flex-grow(1, null);
+    }
+
+    .key {
+      @include font(14px, 24px, null, $text-light, null, 400);
+    }
+
+    .value {
+      @include font(14px, 24px, null, $black, right, 400);
+    }
+  }
+}

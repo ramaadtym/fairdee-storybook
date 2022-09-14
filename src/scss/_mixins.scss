@@ -1,0 +1,43 @@
+@mixin flex-items($align: null, $justify: null) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($size: null, $height: null, $family: null, $color: null, $text-align: left, $weight: null) {
+  font-family: $family;
+  font-size: #{$size};
+  line-height: #{$height};
+  color: $color;
+  text-align: $text-align;
+  font-weight: $weight;
+}
+
+@mixin position($pos: null, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $pos;
+  top: #{$top};
+  right: #{$right};
+  bottom: #{$bottom};
+  left: #{$left};
+}
+
+@mixin flex-grow($grow, $basis: 100%) {
+  flex-grow: $grow;
+  flex-basis: $basis;
+}
+
+@mixin line-ellipsis($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin break-word {
+  white-space: pre-line;
+  white-space: -moz-pre-line;
+  white-space: -pre-line;
+  white-space: -o-pre-line;
+  word-wrap: break-word;
+}
