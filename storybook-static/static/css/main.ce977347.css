@@ -1,38 +1,5 @@
-.storybook-button{font-family:"Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;border:0;border-radius:3em;cursor:pointer;display:inline-block;line-height:1}.storybook-button--primary{color:#fff;background-color:#1ea7fd}.storybook-button--secondary{color:#333;background-color:rgba(0,0,0,0);box-shadow:rgba(0,0,0,.15) 0px 0px 0px 1px inset}.storybook-button--small{font-size:12px;padding:10px 16px}.storybook-button--medium{font-size:14px;padding:11px 20px}.storybook-button--large{font-size:16px;padding:12px 24px}
+.badges .content{background-color:#ffefe2;padding:6px 21px !important;border-radius:8px;font-size:14px;line-height:16px;color:#ffa000;font-weight:600}.badges .content.secondary{background-color:#3062a1;font-size:14px;line-height:16px;color:#fff;font-weight:600}.badges .content.center{text-align:center}.badges .content.left{text-align:left}.badges .content.right{text-align:right}
 .card{background:#fff;box-shadow:0px 1px 6px rgba(216,231,253,.5);border-radius:8px;margin-bottom:12px}.card header{border-bottom:1px solid #d3dded}.card header .title-wrapper{display:flex;align-items:center;padding:16px}.card header .title-wrapper .icon{width:26px;height:26px;border-radius:8px;margin-right:18px;display:flex;align-items:center;justify-content:center}.card header .title-wrapper .icon.with-bg{background-color:#cddaea}.card header .title-wrapper .icon img{width:100%;height:100%;object-fit:contain;border-radius:8px}.card header.no-border{border-bottom:0;font-size:16px;line-height:20px;text-align:left}.card header.no-border .title-wrapper{padding-bottom:0}.card header .title{font-size:16px;line-height:19.2px;color:#000;font-weight:700}.card .accordion{display:flex;align-items:center;justify-content:space-between;border-bottom:0}.card .accordion .toggle-accordion{padding-right:16px;cursor:pointer}.card .accordion .open-card{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.card .accordion .close-card{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.card .accordion-card{border-top:1px solid #d3dded}.card .card-body{padding:12px}.card .card-body .price span{font-size:16px;line-height:24px;color:#000;font-weight:700}.card .card-body .payment-summary-data{background-color:#f6f9ff;padding:12px}.card .card-body .payment-summary-data .total-premium{border-top:1px solid #d3dded;margin-top:16px;padding-top:4px}.card .card-body .payment-summary-data .total-premium .key{font-size:16px;line-height:24px;color:#6d6e71;font-weight:500}.card .card-body .payment-summary-data .total-premium .value{font-size:16px;line-height:19px;color:#1253a4;text-align:right;font-weight:700}.card .card-body .insurer .insurer-wrapper{display:flex;justify-content:center;margin-bottom:12px}.card .card-body .insurer .insurer-wrapper.flex-start{display:flex;justify-content:flex-start}.card .value-wrap{display:flex;align-items:flex-start;margin-bottom:4px}.card .value-wrap p{flex-grow:1}.card .value-wrap .key{font-size:14px;line-height:24px;color:#707070;font-weight:400}.card .value-wrap .value{font-size:14px;line-height:24px;color:#000;text-align:right;font-weight:400}
-.wrapper {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-svg {
-  display: inline-block;
-  vertical-align: top;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 1;
-  margin: 6px 0 6px 10px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-button + button {
-  margin-left: 10px;
-}
-
-.welcome {
-  color: #333;
-  font-size: 14px;
-  margin-right: 10px;
-}
-
 section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -40,7 +7,7 @@ section {
   /* padding: 48px 20px;*/
   margin: 0 auto; 
   max-width: 600px;
-  color: #333;
+  /* color: #333; */
 }
 
 section h2 {
@@ -104,4 +71,4 @@ section .tip-wrapper svg path {
 }
 
 
-/*# sourceMappingURL=main.df5b3d04.css.map*/
+/*# sourceMappingURL=main.ce977347.css.map*/
