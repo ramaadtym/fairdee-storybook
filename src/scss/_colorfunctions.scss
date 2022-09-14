@@ -1,0 +1,165 @@
+// Core Variables
+// https://blog.yipl.com.np/defining-color-palette-in-sass-with-variables-6464c3c3b5e5
+// https://domhabersack.com/sass-color-naming
+
+@import './colors';
+
+$background: (
+  orange: (
+    base: $primary,
+    orange-1: $orange-1,
+    orange-2: $orange-2,
+    orange-3: $orange-3,
+    orange-4: $orange-4
+  ),
+  blue: (
+    base: $primary-blue,
+    blue-1: $blue-1,
+    blue-2: $blue-2,
+    blue-3: $blue-3,
+    blue-4: $blue-4
+  ),
+  grey: (
+    base: $primary-grey,
+    grey-1: $grey-1,
+    grey-2: $grey-2,
+  ),
+  lightblue: (
+    base: $primary-light-blue,
+    lb-1: $light-blue-1,
+    lb-2: $light-blue-2,
+    lb-3: $light-blue-3,
+    lb-4: $light-blue-4,
+    lb-5: $light-blue-5
+  ),
+  black: (
+    base: $primary-black,
+    black-1: $black-1,
+    black-2: $black-2
+  ),
+  rose: (
+    base: $primary-rose,
+    rose-1: $rose-1
+  )
+);
+
+$text: (
+  orange: (
+    base: $primary,
+    orange-1: $orange-1,
+    orange-2: $orange-2,
+    orange-3: $orange-3,
+    orange-4: $orange-4
+  ),
+  blue: (
+    base: $primary-blue,
+    blue-1: $blue-1,
+    blue-2: $blue-2,
+    blue-3: $blue-3,
+    blue-4: $blue-4
+  ),
+  grey: (
+    base: $primary-grey,
+    grey-1: $grey-1,
+    grey-2: $grey-2,
+  ),
+  lightblue: (
+    base: $primary-light-blue,
+    lb-1: $light-blue-1,
+    lb-2: $light-blue-2,
+    lb-3: $light-blue-3,
+    lb-4: $light-blue-4,
+    lb-5: $light-blue-5
+  ),
+  black: (
+    base: $primary-black,
+    black-1: $black-1,
+    black-2: $black-2
+  ),
+  red: (
+    base: $primary-red,
+    red-1: $red-1,
+    red-2: $red-2
+  ),
+  rose: (
+    base: $primary-rose,
+    rose-1: $rose-1
+  )
+);
+
+$button: (
+  normal: (
+    primary: $primary-gradient,
+    secondary: $white
+  ),
+  hover: (
+    primary: $primary,
+    secondary: $light-blue-1
+  ),
+  disable: (),
+  link: ()
+);
+
+
+@function bgcolor($color,$tone){
+
+  // @warn map-get($background,$color);
+
+  @if map-has-key($background,$color){
+      $color: map-get($background,$color);
+
+          @if map-has-key($color,$tone){
+              $tone: map-get($color,$tone);
+              @return $tone;
+          }
+
+          @warn "unknown tone `#{$tone}` in color";
+          @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+
+}
+
+@function txtcolor($color,$tone){
+
+  // @warn map-get($background,$color);
+
+  @if map-has-key($text,$color){
+      $color: map-get($text,$color);
+
+          @if map-has-key($color,$tone){
+              $tone: map-get($color,$tone);
+              @return $tone;
+          }
+
+          @warn "unknown tone `#{$tone}` in color";
+          @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+
+}
+
+@function button($color,$tone){
+
+  // @warn map-get($background,$color);
+
+  @if map-has-key($button,$color){
+      $color: map-get($button,$color);
+
+          @if map-has-key($color,$tone){
+              $tone: map-get($color,$tone);
+              @return $tone;
+          }
+
+          @warn "unknown tone `#{$tone}` in color";
+          @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+
+}

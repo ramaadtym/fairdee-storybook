@@ -1,0 +1,130 @@
+// Core Variables
+
+/*
+==========
+Deprecated
+==========
+  $text-dark: #2f2f2f; change to $primary-black
+  $black: #000000; change to $primary-black
+  $text-dark-1: #161719; change to $primary-black
+  $input-dark: #202020; change to $primary-black
+  $white-secondary: #f6f8ff; change to $white
+  $white-tertiary: #fafafa; change to $white
+  $secondary-light-3:#cddaea; // prev: secondary-light-3) | change to primary-light-blue
+  $soft-rose: #ffe6ea; change to $rose-1
+  $soft-rose-2: #ffc9c9; change to $rose-1
+  
+  $light-grey: #cddaea
+  $secondary-light: #b3caef; //(prev: secondary-light)
+  $secondary-light-2: #dfeafb; //(prev:  $secondary-light-2)
+  $grey-second: #efefef;
+  $grey-three: #d8d8d8;
+  $dark-grey-1: #d9d9d9;
+  $gray: #9fa3aa;
+  $gray-mid: #5b5858;
+  $dark-gray: #9597a1;
+*/
+
+// orange variant
+$primary: #ff9738;
+$orange-1: #fffbf7;
+$orange-2: #ffefe2; // prev: primary-light
+$orange-3: #ffa000; // prev: orange-alt
+$orange-4: #ff6400;
+
+$primary-sec: #f58c1e;
+$primary-dark: #ffc107;
+$secondary-color: #f58b1e;
+$orange: #fe8e00;
+$soft-orange: #efd1bb;
+$soft-orange-2: #fbe6c6;
+
+$orange-light: #ffdcc0;
+$orange-mid-light: #faa132;
+$orange-highlight: #ffce3c;
+$orange-secondary-highlight: #fff3cf;
+$dark-orange: #ff8b41;
+
+$primary-dark: #f87300;
+
+$light-orange-1: #fffbf7;
+$light-orange-2: #ffefe2; // prev: $light-orange
+$red-tertiary: #fd5900;
+
+// blue variant
+$primary-blue: #192383;
+$blue-1: #7097c7;
+$blue-2: #3062a1;
+$blue-3: #1253a4;
+$blue-4: #11417c;
+
+// light blue variant
+$primary-light-blue: #9cb6d6; // base
+$light-blue-1: #f6f9ff; // lb 1
+$light-blue-2: #ebf3ff; // lb 2
+$light-blue-3: #d8e7fd; // lb 3
+$light-blue-4: #d3dded; // lb 4
+$light-blue-5: #889bb9; // prev: input-light | lb-5
+
+// gray variant
+$primary-grey: #e3e3e3;
+$grey-1: #f2f3f5;
+$grey-2: #f5f5fa;
+$grey-3: #d3dded;
+$grey-4: #e3e5e5; // prev: $light-20
+$grey-5: #dde1ea; // prev: $secondary-soft-gray
+$grey-6: #d3d2d2; // prev: $soft-gray
+$grey-7: #c1c0c0;
+
+// light yellow variant
+$primary-light-yellow: #fdf0cc;
+$light-yellow-1: #fffef2;
+
+// black variant
+$primary-black: #2f2f2f; //prev: $text-dark
+$black-1: #0000004d;
+$black-2: #707070;
+$black-3: #6d6e71;
+$black-4: rgba(45, 45, 45, 0.8);
+$text-gray-1: #5d7183; // prev: text-gray-1
+
+// white variant
+$white: #ffffff;
+
+// black variant
+$black: #000000;
+
+// red variant
+$primary-red: #ff0000; // prev: $error
+$red-1: #ff6f6f; // prev: $red-secondary
+$red-2: #e93d3d; // prev: $red
+
+// rose variant
+$primary-rose: #d5596c;
+$rose-1: #fff5f5;
+
+// green variant
+$green-lime-light: #e7f5cf;
+$soft-green-lime: #eeffe0;
+$green-dark: #2d412e;
+$green-mid: #45aa6c;
+$green-400: #66be88;
+$turqoise: #02af84;
+$turqoise-mid: #25d366;
+$turqoise-sec-mid: #1daa8d;
+$turqoise-dark: #00beb7;
+
+// gradient variant
+$primary-gradient: linear-gradient(180deg, #ff9738 0%, #ff8743 100%), #ff9738; // base
+
+// aqua variant
+$aqua: #94c9de;
+$aqua-35: rgba(148, 201, 222, 0.35);
+$aqua-40: rgba(148, 201, 222, 0.4);
+
+// navy variant
+$navy-mid: #4c70ac;
+$navy-sec-mid: #6c88aa;
+$navy-dark: #323c47;
+
+$sky-blue: #cae4ee;
