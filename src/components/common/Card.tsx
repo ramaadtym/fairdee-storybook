@@ -13,7 +13,7 @@ interface Props {
 }
 
 /**
- * Common Card component with some features: header title, accordion, hide header, etc.
+ * `Import: src/components/common/Card.tsx`
  */
 
 const Card: React.FC<Props> = ({
