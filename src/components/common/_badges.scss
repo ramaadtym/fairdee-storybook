@@ -1,0 +1,30 @@
+@import '../../scss/_colorfunctions.scss';
+@import '../../scss/variables.scss';
+@import '../../scss/_mixins.scss';
+
+.badges {
+  .content {
+    background-color: bgcolor(orange,orange-2);
+    padding: 6px 21px !important;
+    border-radius: 8px;
+    @include font(14px, 16px, null, txtcolor(orange, orange-3), null, 600);
+
+    &.secondary {
+      background-color: bgcolor(blue, blue-2);
+      @include font(14px, 16px, null, $white, null, 600);
+    }
+
+    &.center{
+      text-align: center;
+    }
+
+    &.left{
+      text-align: left;
+    }
+
+    &.right{
+      text-align: right;
+    }
+    
+  }
+}
